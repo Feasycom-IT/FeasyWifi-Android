@@ -10,6 +10,13 @@ feasywifi/libs/FeasyWiFiLibrary-2.0.3.6.aar
 
 ---
 
+## 文档 / Documentation
+
+- 中文使用文档：[docs/FeasyWiFiLibrary使用文档.md](docs/FeasyWiFiLibrary使用文档.md)
+- English integration guide: [docs/FeasyWiFiLibrary_Integration_Guide_EN.md](docs/FeasyWiFiLibrary_Integration_Guide_EN.md)
+
+---
+
 ## 下载安装包 / Download APK
 
 | 版本 | 文件 | 大小 | SHA-256 |
