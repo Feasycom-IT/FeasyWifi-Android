@@ -55,3 +55,6 @@ feasywifi/libs/FeasyWiFiLibrary_*.aar
 
 # 本仓库有意提交 release APK
 !apk/*.apk
+
+# 旧版 APK 目录（只保留 apk/ 下的发布包）
+feasywifi/release/
