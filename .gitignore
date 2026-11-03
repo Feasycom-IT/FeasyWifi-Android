@@ -1,0 +1,57 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+# 备份/临时文件
+*.bak
+*.orig
+
+# 构建产物元数据
+output-metadata.json
+
+# OS 垃圾文件
+Thumbs.db
+.DS_Store
+
+# ndk-build 中间产物
+src/main/obj/
+*.o
+*.a
+**/obj/
+**/*.o
+**/*.o.d
+
+# 已废弃的旧版 AAR（改用 FeasyWiFiLibrary 源码模块）
+feasywifi/libs/FeasyWiFiLibrary_*.aar
+
+# 本仓库有意提交 release APK
+!apk/*.apk

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/communication"
+    app:popUpToInclusive="true"
+    app:startDestination="@id/communicationFragment">
+
+    <fragment
+        android:id="@+id/communicationFragment"
+        android:name="com.feasycom.feasywifi.ui.CommunicationFragment"
+        android:label="CommunicationFragment">
+        <action
+            android:id="@+id/action_communicationFragment_to_MQTTConfigFragment"
+            app:destination="@id/MQTTConfigFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MQTTConfigFragment"
+        android:name="com.feasycom.feasywifi.ui.mqtt.MQTTConfigFragment"
+        android:label="MQTTConfigFragment">
+        <action
+            android:id="@+id/action_MQTTConfigFragment_to_MQTTFragment"
+            app:destination="@id/MQTTFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MQTTFragment"
+        android:name="com.feasycom.feasywifi.ui.mqtt.MQTTFragment"
+        android:label="MQTTFragment" />
+
+</navigation>

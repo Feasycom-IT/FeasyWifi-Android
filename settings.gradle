@@ -1,0 +1,2 @@
+rootProject.name = "FeasyWiFi-Android"
+include ':feasywifi'

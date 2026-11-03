@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting"
+    app:popUpToInclusive="true"
+    app:startDestination="@id/deviceFragment">
+
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="com.feasycom.feasywifi.ui.device.DeviceFragment"
+        android:label="SettingFragment">
+        <action
+            android:id="@+id/action_deviceFragment_to_settingFragment"
+            app:destination="@id/settingFragment">
+            <argument
+                android:name="device_name"
+                android:defaultValue="Unknown"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_deviceFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_deviceFragment_to_agreementFragment2"
+            app:destination="@id/agreementFragment">
+            <argument
+                android:name="agreement_type"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.feasycom.feasywifi.ui.SettingFragment"
+        android:label="SettingFragment">
+        <action
+            android:id="@+id/action_settingFragment_to_bluetoothFragment"
+            app:destination="@id/bluetoothFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_otaFragment"
+            app:destination="@id/otaFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_deviceFragment"
+            app:destination="@id/deviceFragment"
+            app:popUpTo="@+id/deviceFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="device_name"
+            android:defaultValue="Unknown"
+            app:argType="string" />
+        <argument
+            android:name="disconnect"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_settingFragment_to_gatewayFragment"
+            app:destination="@id/gatewayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bluetoothFragment"
+        android:name="com.feasycom.feasywifi.ui.bluetooth.BluetoothFragment"
+        android:label="BluetoothFragment">
+        <action
+            android:id="@+id/action_bluetoothFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:popUpTo="@id/settingFragment"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="disconnect"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/otaFragment"
+        android:name="com.feasycom.feasywifi.ui.ota.OtaFragment"
+        android:label="OtaFragment">
+        <action
+            android:id="@+id/action_otaFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:popUpTo="@id/settingFragment"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="disconnect"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.feasycom.feasywifi.ui.filter.FilterFragment"
+        android:label="FilterFragment" />
+
+    <fragment
+        android:id="@+id/agreementFragment"
+        android:name="com.feasycom.feasywifi.ui.agreement.AgreementFragment"
+        android:label="AgreementFragment">
+        <argument
+            android:name="agreement_type"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gatewayFragment"
+        android:name="com.feasycom.feasywifi.ui.gateway.GatewayFragment"
+        android:label="GatewayFragment">
+        <action
+            android:id="@+id/action_gatewayFragment_to_deviceFragment"
+            app:destination="@id/deviceFragment"
+            app:popUpTo="@id/deviceFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bluetoothFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:popUpTo="@id/settingFragment"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="disconnect"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+    </fragment>
+
+</navigation>

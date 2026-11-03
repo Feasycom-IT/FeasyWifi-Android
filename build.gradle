@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.9.20'
+    ext.ndkVersion = "29.0.13599879"
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // aliyun 聚合镜像（含 jcenter 遗留构件，如 SmartRefreshLayout 1.1.0）
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        def nav_version = '2.7.7'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath 'com.android.tools.build:gradle:8.10.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // aliyun 聚合镜像（含 jcenter 遗留构件，如 SmartRefreshLayout 1.1.0）
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://jitpack.io' }
+        maven {url "https://repo.eclipse.org/content/repositories/paho-snapshots/" }
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+    room_version = "2.2.6"
+    retrofit_version = "2.9.0"
+    work_version = "2.5.0"
+    ndkVersion = '29.0.13599879'
+}

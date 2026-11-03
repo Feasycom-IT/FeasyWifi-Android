@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name">FeasyWiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="title_network">Fast network (2.4G)</string>
+    <string name="message_wifi_connection">Please connect to Wi-Fi first.</string>
+    <string name="message_wifi_frequency">The current connection is 5G Wi-Fi, and the device only supports 2.4G Wi-Fi.</string>
+    <string name="configuring_message">FeasyWiFi is performing network configuration, please wait a moment...</string>
+    <string name="upgrade_message">The firmware is being upgraded, please wait patiently</string>
+    <string name="configure_result_failed_port">Failed to establish FeasyWiFi task, the port may be occupied by other programs...</string>
+    <string name="configure_result_failed">Failed to configure network</string>
+    <string name="configure_result_success">Distribution network is successful</string>
+    <string name="configure_network">Distribution network&#8230;</string>
+    <string name="configure_result_success_item">The IP address is: %1$s</string>
+    <string name="connecting_device">Connecting device.</string>
+    <string name="ssid_empty">Please enter the SSID and try again</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_store">Store</string>
+    <string name="title_about">About</string>
+    <string name="more"><u>more</u></string>
+    <string name="company">Company</string>
+    <string name="company_name">Shenzhen Feiyitong Technology Co., Ltd.</string>
+    <string name="tel_number"><u>0755-27924639</u></string>
+    <string name="tel">Tel</string>
+    <string name="web">Web</string>
+    <string name="web_url">www.feasycom.com</string>
+    <string name="mail">E-mail</string>
+    <string name="mail_addr">support@feasycom.com</string>
+    <string name="Facebook">FaceBook</string>
+    <string name="FaceBook_addr"><u>Feasycom</u></string>
+    <string name="wx">WeChat</string>
+    <string name="manual">Manual</string>
+    <string name="manual_details">Details</string>
+    <string name="appVersion">APP VER</string>
+
+    <string name="userGuide">User Guide</string>
+    <string name="qr_success">Saved successfully, please go to the album to view</string>
+    <string name="qr_failed">Save failed.</string>
+    <string name="save">save</string>
+    <string name="module_1">226/236 network config</string>
+    <string name="module_2">246 network config</string>
+    <string name="configuration">Configuration</string>
+    <string name="about_1">Feasycom focus on the researching and developing of IoT (internet of things) products, including Bluetooth Modules, WiFi and LoRa Modules, Bluetooth Beacon, etc. With more than 10-year experiences in the wireless connectivity, which ensure us have the capability for providing low-risk product development, reducing system integration cost and shortening product customization cycle to thousands of diverse customer worldwide.\n\n\n\nFeasycom’s engineering and design services include:\n\nSDK\n\nAPP Support\n\nPCB Design\n\nDevelopment Board\n\nFirmware Development\n\nDepth Customization\n\nCertification Request\n\nTurn-Key Production Testing &amp; Manufacturing\n\n\n\n    Our products and services mainly apply to Automotive, Point of Sale, Home Automation, Healthcare and Engineering, Banking, Computing, Vending Business, Location, Lighting and more.\n\n\n\n    Aiming at “Make Communication Easy and Freely”, Feasycom is dedicated to design and develop high-quality products, efficient services to customers, for today, and all days to come.</string>
+    <string name="ok">Ok</string>
+    <string name="title_qr">QR code</string>
+    <string name="title_about_details">About Feasycom</string>
+    <string name="title_manual">Manual</string>
+    <string name="title_select_device">Select Device</string>
+    <string name="title_ota">OTA upgrade</string>
+    <string name="title_config">One key config</string>
+    <string name="title_bluetooth">BLE network</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_gateway">Gateway configuration</string>
+    <string name="about">About</string>
+    <string name="network_config">Start network config </string>
+    <string name="ssid">SSID：</string>
+    <string name="password">Password：</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="query">Query</string>
+    <string name="query_ip">Query IP</string>
+    <string name="ver">Version</string>
+    <string name="query_version">Query Version</string>
+    <string name="reset">Restore factory setting</string>
+    <string name="ota_tips">Computer IP or firmware name</string>
+    <string name="start_config">Start Config</string>
+    <string name="config_package_id">Configuration package ID</string>
+    <string name="config_message">Setting %1$s </string>
+    <string name="success">success</string>
+    <string name="failure">failure</string>
+    <string name="config_success">Configuration package sending completed</string>
+    <string name="feedback">Feedback</string>
+    <string name="refresh">Refresh</string>
+    <string name="feedback_submit">Submit</string>
+    <string name="feedback_cooperation">Cooperation</string>
+
+    <string name="feedback_data_error">Please enter feedback question.</string>
+    <string name="feedback_status">Sending feedback...</string>
+    <string name="feedback_success">Feedback success</string>
+    <string name="feedback_failure">Feedback failure</string>
+    <string name="no_network">No internet access</string>
+    <string name="device_connecting">Device connecting</string>
+    <string name="please_wait">Please wait...</string>
+    <!--<string name="cancel">Cancel</string>-->
+
+    <string name="no_wifi">Please Connect WiFi</string>
+
+    <string name="bluetooth_off">Bluetooth adapter is disabled.</string>
+    <string name="gps_off">Location disabled.</string>
+
+    <string name="gps_more">MORE</string>
+
+    <string name="gps_more_title">Location service</string>
+
+    <string name="gps_more_text_bluetooth">Your phone may need to enable location services to scan for Bluetooth LE devices. If you are sure that there are broadcasting devices in range and you cannot see them here, enable it. If the device can be scanned, please ignore it.</string>
+
+    <string name="gps_more_text_wifi">Your phone may need to enable location services to automatically recognize the SSID of the connected WiFi. If you are connected to WiFi but cannot recognize the SSID, please enable it. If you can recognize the SSID of the connected WiFi, then please ignore it.</string>
+
+    <string name="enable">E N A B L E</string>
+    <string name="feedback_advive">Advice</string>
+    <string name="feedback_dysfunction">Dysfunction</string>
+    <string name="feedback_abnormal">UI adnormal</string>
+
+    <string name="config_failure">Incorrect configuration package ID</string>
+    <string name="sort">Sort</string>
+
+    <string name="upgrade_success">Upgrade successful.</string>
+    <string name="upgrade_failed">Upgrade failed.</string>
+    <string name="ota_tips_dialog">OTA upgrade needs to complete Bluetooth network configuration first.</string>
+
+    <string name="pin_subtitle">Please enter the password</string>
+    <string name="pin_cancel">CANCEL</string>
+    <string name="pin_yes">YES</string>
+
+    <string name="back">Back</string>
+
+    <string name="network_error">Network error, please check the network.</string>
+
+    <string name="error">error</string>
+
+    <string name="userAndPrivacyAgreement">User Agreement and Privacy Policy</string>
+    <string name="userAndPrivacyAgreementDetail">Use the APP to agree to "%s" and "%s", please go to "About" to view the agreement details.</string>
+    <string name="userAndPrivacyAgreementPrefix">Agree to use the app</string>
+    <string name="userAndPrivacyAgreementSuffix">, Please go to "About" to view the agreement details.</string>
+    <string name="userAgreement">User Agreement</string>
+    <string name="privacyAgreement">Privacy Agreement</string>
+    <string name="agree">Agree</string>
+    <string name="refuse">Refuse And Exit</string>
+
+    <string name="disconnet">The device is disconnected from Bluetooth</string>
+    <string name="password_error">Pin code error</string>
+
+    <string name="permission_prompt">About to scan bluetooth devices, the location permission is a necessary permission to scan bluetooth devices.</string>
+    <string name="to_setting_open_permission">You need to go to the application settings to manually enable permissions</string>
+    <string name="ip">Static IP:</string>
+    <string name="config_ip">Configure</string>
+
+
+    <string name="communication">Communication</string>
+    <string name="setting">Setting</string>
+
+    <string name="countdown">%1$ds | close</string>
+
+    <string name="connect">Connect</string>
+
+    <string name="filter">Filter</string>
+
+
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_proposal">Suggest</string>
+    <string name="feedback_abnormal_function">Function</string>
+    <string name="feedback_interface_abnormality">UI</string>
+
+
+    <string name="open_bluetooth_tips">Please turn on Bluetooth and try again</string>
+
+    <string name="filter_rssi">RSSI filter threshold: %1$ddB</string>
+    <string name="filter_name">Name filter</string>
+    <string name="check"><u>Check</u></string>
+
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="connection_time_out">Connection timed out</string>
+    <string name="hint_ssid">Please enter ssid</string>
+    <string name="hint_password">Please enter password</string>
+    <string name="hint_ip">Please enter static IP</string>
+    <string name="hint_gw">Please enter GW</string>
+    <string name="hint_mask">Please enter MASK</string>
+    <string name="hint_dns">Please enter NDS</string>
+
+
+    <string name="dfu_name">Firmware name：</string>
+    <string name="module_ip">Module IP:</string>
+    <string name="module_version">Module version:</string>
+    <string name="reset_tips">Do you want to restore the module to factory settings</string>
+    <string name="reset_wait">Restoring factory settings, please wait patiently</string>
+
+    <string name="update_success">Module firmware upgrade successfully</string>
+    <string name="update_fail">Module firmware upgrade failed</string>
+
+    <string name="company_profile">Company Profile</string>
+
+    <string name="ip_error">The static ip input is wrong, please re-enter</string>
+    <string name="hint_dfu">Please enter the firmware name</string>
+
+    <string name="input_error">%1$s input error, please re-enter</string>
+
+
+
+    <!-- 异常捕捉 -->
+    <string name="crash_error_hint">An unexpected error occurred\nSorry for the inconvenience</string>
+
+    <string-array name="gateway">
+        <item>Protocol selection</item>
+        <item>MQTT</item>
+        <item>TCP</item>
+        <!--<item>HTTP</item>-->
+    </string-array>
+
+    <string name="wait">Wait for the device to restart</string>
+
+    <string name="send_config">Sending configuration information&#8230;</string>
+
+
+    <string name="close">Close</string>
+
+    <string name="unexpected_error">An unexpected error occurred \n Sorry for the inconvenience</string>
+    <string name="restart">Restart up</string>
+    <string name="view_log">View log</string>
+    <string name="content">Content</string>
+    <string name="title">Title</string>
+    <string name="Entersubscriptiontopic">Entersubscriptiontopic</string>
+    <string name="Enterpublishingtheme">Enterpublishingtheme</string>
+    <string name="data_publishing">Data publishing box</string>
+
+    <string name="searching">正在搜索中...</string>
+    <string name="manually_enable_permission">You need to manually enable location and Bluetooth permissions in the application settings</string>
+    <string name="open">Open</string>
+    <string name="cancel">Cancel</string>
+    <string name="format_error">Format error</string>
+    <string name="port_number_error">Port number error</string>
+    <string name="connection_disconnected">Connection disconnected</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="connect_failed">Connect failed</string>
+    <string name="sdkVersion">SDK VER</string>Z
+
+</resources>
