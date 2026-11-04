@@ -152,7 +152,9 @@ class DeviceFragment : BaseFragment<FragmentDeviceBinding>(), FeasyWiFiCallbacks
                         .show()
                 }
             } else {
-                BluetoothRepository.enabled()
+                // Android 12+ 需要运行时权限，Android 13+ 不能直接 enable()，
+                // 统一走权限申请 + 系统开蓝牙弹窗
+                initPermission()
             }
 
             it.closeHeaderOrFooter()

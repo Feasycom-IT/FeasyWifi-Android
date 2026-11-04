@@ -21,7 +21,7 @@ feasywifi/libs/FeasyWiFiLibrary-2.0.3.6.aar
 
 | 版本 | 文件 | 大小 | SHA-256 |
 | --- | --- | --- | --- |
-| `2.0.3.6` | [apk/FeasyWifi2.0.3.6_2026-11-03.apk](apk/FeasyWifi2.0.3.6_2026-11-03.apk) | 15,858,316 B（约 15.12 MiB） | `C3A8B64F7888F6FC0F9096BDD7FAF7379258D1CCC71CD66D49D04130BE5D1E7F` |
+| `2.0.3.6` | [apk/FeasyWifi2.0.3.6_2026-11-04.apk](apk/FeasyWifi2.0.3.6_2026-11-04.apk) | 15,858,316 B（约 15.12 MiB） | `7B71C13873C4B3CB5E653C91D6C2B84CA94FDC58BF7403EB0B40DD2846C77F00` |
 
 - 适用系统：Android 9 及以上（`minSdk 28`）；
 - APK 为示例 App 的构建产物，正式发布前请核对签名与版本。

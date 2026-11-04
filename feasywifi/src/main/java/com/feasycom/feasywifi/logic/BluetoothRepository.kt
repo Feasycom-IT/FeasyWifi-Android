@@ -1,9 +1,13 @@
 package com.feasycom.feasywifi.logic
 
+import android.Manifest
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothGatt
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Handler
 import android.os.Looper
+import androidx.core.content.ContextCompat
 import com.blankj.utilcode.util.LogUtils
 import com.feasycom.bean.BluetoothDeviceBwWrapper
 import com.feasycom.ble.FscBleCentralBwApiBwImp
@@ -51,10 +55,41 @@ object BluetoothRepository : FscBleCentralBwCallbacks, FscNetworkCentralBwCallba
 
     fun isShowLog(showLog: Boolean) = mFscBleCentralApi.isShowLog(showLog)
 
-    fun isBtEnabled() = mFscBleCentralApi.isBtEnabled
+    /**
+     * 蓝牙是否已开启。
+     * Android 12+ 未授予 BLUETOOTH_CONNECT 时 isEnabled() 会抛 SecurityException，这里兜底为 false。
+     */
+    fun isBtEnabled(): Boolean {
+        return try {
+            mFscBleCentralApi.isBtEnabled
+        } catch (e: SecurityException) {
+            LogUtils.e(TAG, "isBtEnabled SecurityException: ${e.message}")
+            false
+        }
+    }
 
-    fun enabled() {
-        mFscBleCentralApi.enabled()
+    /**
+     * 直接打开蓝牙。仅作兼容保留：
+     * - Android 12+ 需要 BLUETOOTH_CONNECT 运行时权限；
+     * - Android 13+ 普通应用已无法直接开关蓝牙，必须引导用户通过系统弹窗开启
+     *   （走 DeviceFragment.initPermission() 里的 ACTION_REQUEST_ENABLE）。
+     */
+    fun enabled(): Boolean {
+        return try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+                ContextCompat.checkSelfPermission(
+                    App.sContext!!,
+                    Manifest.permission.BLUETOOTH_CONNECT
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                false
+            } else {
+                mFscBleCentralApi.enabled()
+            }
+        } catch (e: SecurityException) {
+            LogUtils.e(TAG, "enabled SecurityException: ${e.message}")
+            false
+        }
     }
 
     fun registerViewCallback(callback: FeasyWiFiCallbacks) {
